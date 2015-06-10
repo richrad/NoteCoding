@@ -12,18 +12,8 @@
 		9BC9389B1B28A516000EED7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC938991B28A516000EED7C /* Main.storyboard */; };
 		9BC9389D1B28A516000EED7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC9389C1B28A516000EED7C /* Images.xcassets */; };
 		9BC938A01B28A516000EED7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC9389E1B28A516000EED7C /* LaunchScreen.xib */; };
-		9BC938AC1B28A516000EED7C /* NoteCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC938AB1B28A516000EED7C /* NoteCodingTests.swift */; };
+		9BC938B61B28A52D000EED7C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC938B51B28A52D000EED7C /* Note.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9BC938A61B28A516000EED7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9BC938881B28A516000EED7C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BC9388F1B28A516000EED7C;
-			remoteInfo = NoteCoding;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9BC938901B28A516000EED7C /* NoteCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +23,11 @@
 		9BC9389A1B28A516000EED7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BC9389C1B28A516000EED7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9BC9389F1B28A516000EED7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9BC938A51B28A516000EED7C /* NoteCodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteCodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BC938AA1B28A516000EED7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BC938AB1B28A516000EED7C /* NoteCodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCodingTests.swift; sourceTree = "<group>"; };
+		9BC938B51B28A52D000EED7C /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9BC9388D1B28A516000EED7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9BC938A21B28A516000EED7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				9BC938921B28A516000EED7C /* NoteCoding */,
-				9BC938A81B28A516000EED7C /* NoteCodingTests */,
 				9BC938911B28A516000EED7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				9BC938901B28A516000EED7C /* NoteCoding.app */,
-				9BC938A51B28A516000EED7C /* NoteCodingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +58,7 @@
 			children = (
 				9BC938951B28A516000EED7C /* AppDelegate.swift */,
 				9BC938971B28A516000EED7C /* ViewController.swift */,
+				9BC938B51B28A52D000EED7C /* Note.swift */,
 				9BC938991B28A516000EED7C /* Main.storyboard */,
 				9BC9389C1B28A516000EED7C /* Images.xcassets */,
 				9BC9389E1B28A516000EED7C /* LaunchScreen.xib */,
@@ -91,23 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				9BC938941B28A516000EED7C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9BC938A81B28A516000EED7C /* NoteCodingTests */ = {
-			isa = PBXGroup;
-			children = (
-				9BC938AB1B28A516000EED7C /* NoteCodingTests.swift */,
-				9BC938A91B28A516000EED7C /* Supporting Files */,
-			);
-			path = NoteCodingTests;
-			sourceTree = "<group>";
-		};
-		9BC938A91B28A516000EED7C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9BC938AA1B28A516000EED7C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,24 +95,6 @@
 			productReference = 9BC938901B28A516000EED7C /* NoteCoding.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9BC938A41B28A516000EED7C /* NoteCodingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9BC938B21B28A516000EED7C /* Build configuration list for PBXNativeTarget "NoteCodingTests" */;
-			buildPhases = (
-				9BC938A11B28A516000EED7C /* Sources */,
-				9BC938A21B28A516000EED7C /* Frameworks */,
-				9BC938A31B28A516000EED7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9BC938A71B28A516000EED7C /* PBXTargetDependency */,
-			);
-			name = NoteCodingTests;
-			productName = NoteCodingTests;
-			productReference = 9BC938A51B28A516000EED7C /* NoteCodingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +106,6 @@
 				TargetAttributes = {
 					9BC9388F1B28A516000EED7C = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					9BC938A41B28A516000EED7C = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 9BC9388F1B28A516000EED7C;
 					};
 				};
 			};
@@ -182,7 +123,6 @@
 			projectRoot = "";
 			targets = (
 				9BC9388F1B28A516000EED7C /* NoteCoding */,
-				9BC938A41B28A516000EED7C /* NoteCodingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +138,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BC938A31B28A516000EED7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,26 +147,11 @@
 			files = (
 				9BC938981B28A516000EED7C /* ViewController.swift in Sources */,
 				9BC938961B28A516000EED7C /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9BC938A11B28A516000EED7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9BC938AC1B28A516000EED7C /* NoteCodingTests.swift in Sources */,
+				9BC938B61B28A52D000EED7C /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9BC938A71B28A516000EED7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9BC9388F1B28A516000EED7C /* NoteCoding */;
-			targetProxy = 9BC938A61B28A516000EED7C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9BC938991B28A516000EED7C /* Main.storyboard */ = {
@@ -358,40 +276,6 @@
 			};
 			name = Release;
 		};
-		9BC938B31B28A516000EED7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = NoteCodingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteCoding.app/NoteCoding";
-			};
-			name = Debug;
-		};
-		9BC938B41B28A516000EED7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = NoteCodingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteCoding.app/NoteCoding";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,14 +293,6 @@
 			buildConfigurations = (
 				9BC938B01B28A516000EED7C /* Debug */,
 				9BC938B11B28A516000EED7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		9BC938B21B28A516000EED7C /* Build configuration list for PBXNativeTarget "NoteCodingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9BC938B31B28A516000EED7C /* Debug */,
-				9BC938B41B28A516000EED7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
