@@ -38,35 +38,4 @@ class Note: NSObject, NSCoding {
             self.text = text
         }
     }
-    
-/*
-    This is just for convenience and returns the path to the file where we save our data. Don't worry if this looks confusing to you – it's just kind of weird.
-*/
-    class func dataPath() -> String {
-        let documentsDirectory = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as! String
-        let dataPath = documentsDirectory.stringByAppendingPathComponent("NoteData.plist")
-        return dataPath
-    }
-    
-    
-/*
-    This is how we save the note. The NSKeyedArchiver goes to our object and says "What should I do to save you?" Our object says "Just do this stuff I wrote in `encodeWithCoder`!" Then the NSKeyedArchiver writes the data to your device.
-*/
-    func saveNoteData() {
-        NSKeyedArchiver.archiveRootObject(self, toFile: Note.dataPath())
-    }
-    
-/*
-    This is the inverse of what we do in `saveNoteData` – the NSKeyedUnarchiver looks for a file at `Note.dataPath()` and if it finds one it follows the instructions in `init(coder)` to recreate it. If it doesn't find a file or if the file doesn't load correctly, it just returns a new Note object instead. This is handy for the first time the app is run and nothing has been saved yet.
-*/
-    class func loadNote() -> Note {
-        if let note = NSKeyedUnarchiver.unarchiveObjectWithFile(Note.dataPath()) as? Note {
-            return note
-        } else {
-            return Note()
-        }
-    }
-    
-
-    
 }
